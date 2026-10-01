@@ -86,24 +86,31 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.menu-list {
-    list-style: none;
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
 }
 
-.menu-list li {
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
+.menu-table th,
+.menu-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
 }
 
-.price {
-    font-weight: bold;
-    color: #9b4d00;
-    white-space: nowrap;
+.menu-table th {
+    background: #7b3f00;
+    color: white;
 }
 
+.menu-table tr::nth-child(even) {
+    background: #fffaf3;
+}
+
+.menu-table tr:hover {
+    background: #f2d2a2;
+}
 .about-text {
     background: white;
     padding: 25px;
@@ -213,9 +220,13 @@ footer {
         font-size: 32px;
     }
 
-    .menu-list li {
-        flex-direction: column;
-        gap: 0;
+    .menu-table {
+        font-size: 14px;
+    }
+
+    .menu-table th,
+    .menu-table td {
+        padding: 10px;
     }
 }
 
