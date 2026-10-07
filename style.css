@@ -111,6 +111,7 @@ nav a:hover {
 .menu-table tr:hover {
     background: #f2d2a2;
 }
+
 .about-text {
     background: white;
     padding: 25px;
@@ -260,4 +261,171 @@ nav a.active {
 .video-description {
     margin-top: 12px;
     color: #555;
+}
+
+/* =========================
+   FORM PEMESANAN
+   ========================= */
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.contact-form h3 {
+    color: #7b3f00;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d69b52;
+    padding-bottom: 10px;
+}
+
+/* Label */
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4a2500;
+}
+
+/* Input Text, Date, Number */
+.contact-form input[type="text"],
+.contact-form input[type="date"],
+.contact-form input[type="number"],
+.contact-form input[type="email"],
+.contact-form select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    background: #fffdf9;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efek ketika input dipilih */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="date"]:focus,
+.contact-form input[type="number"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form select:focus {
+    border-color: #7b3f00;
+    box-shadow: 0 0 0 3px rgba(123, 63, 0, 0.10);
+}
+
+/* Judul kategori menu */
+.contact-form p {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #7b3f00;
+    font-size: 16px;
+}
+
+/* Checkbox dan Radio */
+.contact-form input[type="checkbox"],
+.contact-form input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+    accent-color: #7b3f00;
+}
+
+/* Label checkbox dan radio */
+.contact-form label:has(input[type="checkbox"]),
+.contact-form label:has(input[type="radio"]) {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #444;
+    cursor: pointer;
+}
+
+/* Area pembayaran */
+.payment-section {
+    margin-top: 20px;
+    padding: 18px;
+    background: #fffaf3;
+    border: 1px solid #ead6bd;
+    border-radius: 10px;
+}
+
+/* Logo kartu */
+.card-logo {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-logo span {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Logo dompet digital */
+.digital-logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.digital-logo span {
+    background: #fff3e3;
+    border: 1px solid #e0c49f;
+    color: #7b3f00;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Tombol submit */
+.contact-form .button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background: #7b3f00;
+    transition: 0.3s;
+}
+
+.contact-form .button:hover {
+    background: #9b4d00;
+    transform: translateY(-1px);
+}
+
+/* Tampilan form di HP */
+@media (max-width: 700px) {
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form h3 {
+        font-size: 21px;
+    }
+
+    .card-logo,
+    .digital-logo {
+        gap: 6px;
+    }
+
+    .card-logo span,
+    .digital-logo span {
+        font-size: 12px;
+        padding: 6px 9px;
+    }
 }
